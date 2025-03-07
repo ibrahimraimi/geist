@@ -1,0 +1,73 @@
+{
+	"$schema": "https://unpkg.com/jsrepo@1.33.0/schemas/registry-config.json",
+	"dirs": [
+		"./src/lib/components",
+		"./src/lib/assets",
+		"./src"
+	],
+	"meta": {
+		"authors": [
+			"SHYAKA Davis"
+		],
+		"bugs": "https://github.com/ibrahimraimi/geist/issues",
+		"homepage": "https://geist.ibrahimraimi.com/",
+		"tags": [
+			"svelte",
+			"geist",
+			"ui",
+			"design",
+			"shadcn-svelte"
+		]
+	},
+	"configFiles": [
+		{
+			"name": "Global CSS",
+			"path": "./src/app.css",
+			"expectedPath": "./src/app.css"
+		},
+		{
+			"name": "Tailwind Config",
+			"path": "./tailwind.config.ts",
+			"expectedPath": "./tailwind.config.ts"
+		},
+		{
+			"name": "Vite config",
+			"path": "./vite.config.ts",
+			"expectedPath": "./vite.config.ts"
+		}
+	],
+	"includeBlocks": [],
+	"includeCategories": [
+		"ui",
+		"lib",
+		"icons"
+	],
+	"doNotListBlocks": [
+		"command",
+		"dialog",
+		"label",
+		"link",
+		"popover",
+		"range-calender",
+		"separator"
+	],
+	"doNotListCategories": [
+		"icons",
+		"lib"
+	],
+	"preview": true,
+	"excludeDeps": [
+		"svelte",
+		"@sveltejs/kit",
+		"vite",
+		"tailwindcss"
+	],
+	"rules": {
+		"no-category-index-file-dependency": "off",
+		"require-local-dependency-exists": "error",
+		"max-local-dependencies": [
+			"off",
+			10
+		]
+	}
+}
